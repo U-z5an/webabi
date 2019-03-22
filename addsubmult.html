@@ -1,0 +1,29 @@
+<html>
+<script>
+	function userinput()
+	{
+
+var a=document.getElementById("one").value*1;
+var b=document.getElementById("two").value*1;
+var c=document.getElementById("abc").value;
+	if (c=="add"){alert(a+b)}
+	if (c=="subtract"){alert(a-b)}
+	if (c=="multiply"){alert(a*b)}
+
+	}
+</script>
+
+<form>
+	<p> Enter number<input type="text" id="one"/></p>
+	<p> Enter number<input type="text" id="two"/></p>
+
+	<p> <select id="abc">
+		<option disabled="chooseone">choose one</option>
+		<option value="add" selected> add</option> 
+		<option value="subtract" selected> sub</option> 
+		<option value="multiply" selected> multi</option> 
+		
+	</select></p>
+	<p><button oncLick="userinput()"> click </button></p>
+</form>
+</html>
